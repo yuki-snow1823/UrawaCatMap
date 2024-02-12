@@ -71,3 +71,5 @@ gem 'jquery-rails'
 gem "sassc-rails"
 
 gem 'haml-rails', '~> 2.0'
+
+gem "devise"
