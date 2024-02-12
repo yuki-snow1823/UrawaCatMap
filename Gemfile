@@ -55,7 +55,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  
+
   gem "rspec-rails"
   gem "factory_bot_rails"
 end
@@ -69,3 +69,5 @@ end
 gem 'bootstrap', '~> 5.3.2'
 gem 'jquery-rails'
 gem "sassc-rails"
+
+gem 'haml-rails', '~> 2.0'
