@@ -1,6 +1,8 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  extend Enumerize
+
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+        :recoverable, :rememberable, :validatable
+
+  enumerize :status, in: { pending: 0, active: 1, suspended: 3 }, default: :pending
 end
