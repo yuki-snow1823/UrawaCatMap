@@ -116,6 +116,8 @@ GEM
     diff-lcs (1.5.1)
     drb (2.2.0)
       ruby2_keywords
+    enumerize (2.7.0)
+      activesupport (>= 3.2)
     erubi (1.12.0)
     execjs (2.9.1)
     factory_bot (6.4.6)
@@ -329,6 +331,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
+  enumerize (~> 2.3, >= 2.3.1)
   factory_bot_rails
   haml-rails (~> 2.0)
   importmap-rails
