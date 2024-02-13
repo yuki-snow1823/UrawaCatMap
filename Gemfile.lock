@@ -114,6 +114,10 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.5.1)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     drb (2.2.0)
       ruby2_keywords
     enumerize (2.7.0)
@@ -331,6 +335,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
+  dotenv-rails (~> 2.6)
   enumerize (~> 2.3, >= 2.3.1)
   factory_bot_rails
   haml-rails (~> 2.0)
