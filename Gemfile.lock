@@ -130,6 +130,7 @@ GEM
       factory_bot (~> 6.4)
       railties (>= 5.0.0)
     ffi (1.16.3)
+    geocoder (1.8.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     haml (6.3.0)
@@ -338,6 +339,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.6)
   enumerize (~> 2.3, >= 2.3.1)
   factory_bot_rails
+  geocoder (~> 1.8, >= 1.8.2)
   haml-rails (~> 2.0)
   importmap-rails
   jquery-rails

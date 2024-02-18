@@ -77,3 +77,5 @@ gem "devise"
 gem 'enumerize', '~> 2.3', '>= 2.3.1'
 
 gem 'dotenv-rails', '~> 2.6'
+
+gem 'geocoder', '~> 1.8', '>= 1.8.2'
