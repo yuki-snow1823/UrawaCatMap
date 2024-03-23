@@ -11,17 +11,23 @@
   let map
 
   function initMap(){
-    geocoder = new google.maps.Geocoder()
+  // The location of Uluru
+  const position = { lat: -25.344, lng: 131.031 };
 
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 40.7828, lng:-73.9653},
-      zoom: 12,
-    });
+  const map = new google.maps.Map(document.getElementById("map"),  {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID", // Map ID is required for advanced markers.
+  });
 
-    marker = new google.maps.Marker({
-      position:  {lat: 40.7828, lng:-73.9653},
-      map: map
+    // The advanced marker, positioned at Uluru
+    const marker = new google.maps.marker.AdvancedMarkerElement({
+        map,
+        position: position,
+        title: 'Uluru',
     });
   }
+
+  // 今座標のあるlat lngを取得する関数
 
 %script{src: "https://maps.googleapis.com/maps/api/js?key=#{ENV['MAP_KEY']}&callback=initMap", async: "", defer: ""}
